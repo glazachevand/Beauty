@@ -1,0 +1,158 @@
+.shop {
+  padding: 68px 0 133px;
+  background-color: $grayColor;
+  @media (max-width: $md) {
+    padding: 30px 0 60px;
+  }
+  &__container {
+    padding-top: 10px;
+    background: url("./img/car.png") 95% 0 no-repeat;
+  }
+  &__title {
+    margin-bottom: 40px;
+    @media (max-width: $xl) {
+      text-align: center;
+    }
+  }
+  &__goods-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 70px;
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+  &__goods-item {
+    flex: 0 0 auto;
+    margin-bottom: 30px;
+  }
+  &__subscribe-row {
+    display: flex;
+    column-gap: 30px;
+    color: #fff;
+    @media (max-width: $lg) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &__subscribe-item {
+    flex: 0 1 50%;
+  }
+}
+.goods {
+  padding: 25px 30px;
+  min-height: 363px;
+  width: 255px;
+  background-color: #fff;
+  text-align: center;
+  &__img {
+    display: inline-block;
+    margin-bottom: 20px;
+    height: 166px;
+    width: 125px;
+  }
+  &__description {
+    margin-bottom: 14px;
+    font-size: $fontSize;
+    line-height: 1.4;
+    color: $darkColor;
+  }
+  &__price {
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.05em;
+  }
+  &__btn {
+    padding: 7px 38px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background-color: $greenColor;
+    border-radius: 30px;
+    &:hover,
+    &:active {
+      background-color: #93d38e;
+      transition: all 0.4s ease 0s;
+    }
+  }
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  padding: 35px 45px 35px 40px;
+  background-color: $greenColor;
+  @media (max-width: $xl) {
+    padding: 25px 30px;
+  }
+  &__container {
+    width: 100%;
+    background: url("./img/envelope.png") center right no-repeat;
+    @media (max-width: $sm) {
+      background: url("./img/envelope.png") center right / 30% no-repeat;
+    }
+  }
+  &__content {
+    width: 60%;
+    @media (max-width: $sm) {
+      width: 70%;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 25px;
+    width: 85%;
+    font-size: $fontSize;
+    line-height: 1.4;
+  }
+  &__email {
+    padding: 9px 25px;
+    width: 225px;
+    font-size: $fontSize;
+    color: #000;
+    border-radius: 30px;
+    background-color: #fff;
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+}
+.shop-map {
+  display: flex;
+  align-items: center;
+  padding: 35px 40px;
+  background-color: $greenColor;
+  @media (max-width: $xl) {
+    padding: 25px 30px;
+  }
+  &__content {
+    width: 40%;
+    @media (max-width: $sm) {
+      width: 50%;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 25px;
+    width: 85%;
+    font-size: $fontSize;
+    line-height: 1.4;
+  }
+  &__btn {
+    padding: 7px 27px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    &:hover,
+    &:active {
+      background-color: #93d38e;
+      transition: all 0.4s ease 0s;
+    }
+  }
+}

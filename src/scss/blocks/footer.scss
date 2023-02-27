@@ -1,0 +1,87 @@
+.footer {
+  a:hover,
+  a:active {
+    color: $greenColor;
+    transition: all 0.4s ease 0s;
+  }
+  &__contacts-row {
+    padding: 37px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: #000;
+    @media (max-width: $md) {
+      padding: 20px 0;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  &__social {
+    flex: 0 0 33.3%;
+  }
+  &__address {
+    flex: 0 1 33.3%;
+    font-size: $fontSize;
+    text-align: center;
+  }
+  &__tel-container {
+    flex: 0 1 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 40px;
+    @media (max-width: $md) {
+      justify-content: center;
+      column-gap: 30px;
+    }
+  }
+  &__tel {
+    padding: 10px 0;
+    font-size: 1rem;
+    line-height: normal;
+    color: #000;
+  }
+  &__btn {
+    padding: 10px 0;
+    font-size: $fontSize;
+    color: #000;
+  }
+  &__copyright-row {
+    padding: 25px 0;
+    font-size: 0.75rem;
+    line-height: normal;
+    background-color: $grayColor;
+    color: #828282;
+  }
+  &__copyright-container {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid $greenColor;
+    border-radius: 50%;
+    &:hover,
+    &:active {
+      background-color: $grayColor;
+      transition: all 0.4s ease 0s;
+    }
+  }
+  &__icon {
+    &:before {
+      color: $greenColor;
+    }
+  }
+}

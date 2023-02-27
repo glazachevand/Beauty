@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $darkColor;
+  background-color: #fff;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: $maxWidthContainer;
+  min-width: $minWidth;
+  margin: 0 auto;
+  @media (max-width: $xl) {
+    max-width: 970px;
+  }
+  @media (max-width: $lg) {
+    max-width: 750px;
+  }
+  @media (max-width: $md) {
+    max-width: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+}
+.title {
+  font-family: $fontFamily;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  @media (max-width: $lg) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: $sm) {
+    font-size: 1.5rem;
+  }
+}
+.title2 {
+  font-family: $fontFamily;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  color: #000;
+  @media (max-width: $lg) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: $md) {
+    font-size: 1.1rem;
+  }
+}
+.title3 {
+  font-family: $fontFamily;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0em;
+  white-space: nowrap;
+}
+.btn {
+  display: inline-block;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  white-space: nowrap;
+  cursor: pointer;
+}
+a {
+  white-space: nowrap;
+}
