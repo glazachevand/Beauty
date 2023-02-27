@@ -6,7 +6,7 @@
   }
   &__container {
     padding-top: 10px;
-    background: url("./img/car.png") 95% 0 no-repeat;
+    background: url("./../img/car.png") 95% 0 no-repeat;
   }
   &__title {
     margin-bottom: 40px;
@@ -89,7 +89,7 @@
   }
   &__container {
     width: 100%;
-    background: url("./img/envelope.png") center right no-repeat;
+    background: url("./../img/envelope.png") center right no-repeat;
     @media (max-width: $sm) {
       background: url("./img/envelope.png") center right / 30% no-repeat;
     }
