@@ -589,7 +589,7 @@ a {
 
 .shop__container {
   padding-top: 10px;
-  background: url("./img/car.png") 95% 0 no-repeat;
+  background: url("./../img/car.png") 95% 0 no-repeat;
 }
 
 .shop__title {
@@ -695,7 +695,7 @@ a {
 
 .subscribe__container {
   width: 100%;
-  background: url("./img/envelope.png") center right no-repeat;
+  background: url("./../img/envelope.png") center right no-repeat;
 }
 
 .subscribe__content {
@@ -785,11 +785,11 @@ a {
 
 @supports (-webkit-appearance:none) {
   .shop__container {
-    background: url("./img/car.webp") 95% 0 no-repeat;
+    background: url("./../img/car.webp") 95% 0 no-repeat;
   }
 
   .subscribe__container {
-    background: url("./img/envelope.webp") center right no-repeat;
+    background: url("./../img/envelope.webp") center right no-repeat;
   }
 }
 
