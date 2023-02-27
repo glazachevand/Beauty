@@ -44,9 +44,11 @@
     color: #000;
   }
   &__btn {
-    padding: 10px 0;
+    padding: 10px 25px;
     font-size: $fontSize;
     color: #000;
+    border: 2px solid $greenColor;
+    border-radius: 40px;
   }
   &__copyright-row {
     padding: 25px 0;
