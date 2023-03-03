@@ -651,6 +651,8 @@ a {
   margin-bottom: 20px;
   height: 166px;
   width: 125px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .goods__description {
@@ -1024,11 +1026,19 @@ a {
   }
 
   .main-menu__body {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
   }
 
   .main-menu__body._active {
-    display: block;
+    max-height: 500px;
+    overflow: visible;
+    -webkit-transition: all 0.8s ease-in;
+    -o-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
   }
 
   .main-menu__list {
