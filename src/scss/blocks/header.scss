@@ -207,9 +207,13 @@
   }
   &__body {
     @media (max-width: $md) {
-      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.8s ease;
       &._active {
-        display: block;
+        max-height: 500px;
+        overflow: visible;
+        transition: all 0.8s ease-in;
       }
     }
   }
